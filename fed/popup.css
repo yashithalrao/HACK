@@ -1,0 +1,177 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f5dc;
+    color: #5c3a21;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    min-width: 300px; 
+}
+
+.main-content,
+.other_stuff {
+    background-color: #f5f5dc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    color: #5c3a21;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: #7a5030;
+    margin: 0; 
+}
+
+.section_title {
+    font-size: 1.1em;
+    color: #5c3a21;
+    margin-bottom: 10px;
+}
+
+.dropdown_container,
+.slider_container,
+.color_picker_container {
+    margin-bottom: 15px;
+}
+
+select,
+input[type="range"],
+input[type="color"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.optimize_guide ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.optimize_guide li {
+    margin-bottom: 8px;
+}
+
+.optimize_guide strong {
+    font-weight: bold;
+}
+
+.optimize_guide {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.optimize_guide img {
+    vertical-align: middle;
+}
+
+.optimize_guide span {
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.dropdown_container,
+.slider_container,
+.color_picker_container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.dropdown_container>*,
+.slider_container>*,
+.color_picker_container>* {
+    align-self: flex-start;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #5c3a21;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 6px;
+}
+
+.main_content_other {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.control-group { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+
+
+.other_stuff .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px; 
+    margin-bottom: 15px; 
+}
+
+.other_stuff .header h2 {
+    margin: 0; 
+}
+
+.other_stuff .header img {
+    width: 30px;
+    height: 30px;
+}
+
+#background_color_picker{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#text_color_picker{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

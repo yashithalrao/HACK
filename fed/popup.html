@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anasi</title>
+        <link rel="icon" type="image/png" href="spider.png">
+
+        <link rel="stylesheet" type="text/css" href="popup.css">
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="header">
+                <h1>ANANSI  <img src = "spider.png" style="width: 25px; height: 25px;"></h1>
+            
+                <!-- <button id="listenText">Listen</button> -->
+
+            </div>
+
+            <div class="optimization">
+                <h2 class="section_title">Optimization Mode</h2>
+                <div class="dropdown_container">
+                    <select id="optimize_selector">
+                        <option value="complex_ideas" id = "simplyfy_complex">Simplifies sentences</option>
+                        <option value="reading_flow" id = "reading_flow">Enhances readability</option>
+                        <option value = "summarize" id = "summarize">Summarizing the web page</option>
+                        <option value="none" selected>None</option>
+                        
+                    </select>
+                </div>
+                <div id="optimize_guide" class="optimize_guide">
+
+                    <img src="eye.png" alt="Icon Description" width="30" height="30" class = "eye">
+                    <ul class = "guide_real" style="display: none;">
+                        <li><strong>Simplifies sentences</strong> - Breaks down difficult concepts/sentences</li>
+                        <li><strong>Enhances readability</strong> Adds emojis to sentences for better attention retention</li>
+                        <li><strong>Summarizing the web page</strong> - Summarizes the entire web page within 50-100 words</li>
+                    </ul> 
+                    <span class = "infolala">Info</span>
+
+                </div>
+            </div>
+
+                
+
+            
+
+
+        </div>
+
+        <div class = "other_stuff">
+            <div class = "header">
+                <img src="settings.png" alt="Icon Description" width="30" height="30">
+                <h2>Additional Settings</h2>
+                
+            </div>
+            <div class = "main_content_other">
+                <h3>Font Size</h3>
+                <div class="slider_container">
+                    <input type="range" min="1" max="50" value="25" class="slider" id="font_size_slider">
+                </div>
+
+                <h3>Font Style</h3>
+                <div class="dropdown_container">
+                    <select id="font_style_selector">
+                        <option value="open_dyslexia" selected>Open Dyslexia</option>
+                        <option value="lexie-readable">Lexie Readable</option>
+                        <option value="monospace">Monospace</option>
+                    </select>
+                </div>
+                <h3>Theme selector</h3>
+                <div class="dropdown-container">
+                    <select id="theme_selector">
+                        
+                        <option value="default">Default</option>
+                        <option value="darkMode">Dark Mode</option>
+                        <option value="sepia">Sepia</option>
+                        <option value="creamPaper">Cream Paper</option>
+                    </select>
+                </div>
+
+
+                <h3>Line Spacing</h3>
+                <div class="slider_container">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="line_spacing_slider">
+                </div>
+                <h3>Letter Spacing</h3>
+                <div class="slider_container">
+                    <input type="range" min="1" max="5" value="3" class="slider" id="letter_spacing_slider">
+                </div>
+                <h3>Background Color</h3>
+
+
+                <div class="color_picker_container">
+                    <input type="color" id="background_color_picker">
+                </div>
+                <h3>Text Color</h3>
+                <div class="color_picker_container">
+                    <input type="color" id="text_color_picker">
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src = "popup.js"></script>
+        </body>
+</html> 
+
+
